@@ -56,8 +56,6 @@ body {
 
 .navbar {
   height: 7rem;
-  /* width: 85%; */
-  /* margin: 0 auto; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -495,7 +493,7 @@ body {
   .section-connect,
   .section-care,
   .section-team {
-    padding: 4.6rem;
+    padding: 4.6rem 0;
   }
 
   .connect-heading {
@@ -513,6 +511,7 @@ body {
   }
 
   .section-header {
+    height: 80vh;
     background: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.7),
@@ -529,6 +528,7 @@ body {
   }
 
   .hero {
+    height: 70vh;
     grid-template-columns: 1fr;
     text-align: center;
     padding: 5rem 20rem;
@@ -650,6 +650,10 @@ body {
     position: relative;
   }
 
+  .mail-span {
+    display: none;
+  }
+
   .connect-heading {
     padding: 0;
     font-size: 3rem;
@@ -689,53 +693,74 @@ body {
 }
 
 @media screen and (max-width: 473px) {
+  .container {
+    max-width: 100%;
+  }
+
   .section-header {
-    height: 100vh;
+    height: 80vh;
   }
 
   .navbar {
-    padding: 0 2.4rem;
+    padding: 5rem;
   }
 
   .hero {
-    height: 90vh;
+    height: 70vh;
     padding: 2.6rem;
   }
 
   .hero-text {
-    gap: 5rem;
+    gap: 2.4rem;
   }
 
   .hero-heading {
-    font-size: 3.6rem;
+    font-size: 4.2rem;
   }
 
   .hero-description {
-    font-size: 1.6rem;
+    font-size: 2rem;
     padding: 0 6rem;
   }
 
   .connect-heading {
-    font-size: 2rem;
+    font-size: 3.6rem;
   }
 
-  .care-box--text,
-  .care-box--image {
-    width: 100%;
+  .connect-image {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .care-box .care-box--text,
+  .care-box .care-box--image {
+    width: 90%;
   }
 
   .care-box--heading {
-    font-size: 2.4rem;
+    font-size: 3.6rem;
   }
 
   .care-box--description {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+  }
+
+  .team-heading {
+    font-size: 3.6rem;
+  }
+
+  .team-description {
+    padding: 0 3rem;
   }
 
   .team-center {
     grid-template-columns: 1fr;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
+  }
+
+  .team-image {
+    height: 60rem;
   }
 
   .team-info {
@@ -743,7 +768,19 @@ body {
     text-align: center;
   }
 
+  .team-info--heading {
+    font-size: 3rem;
+  }
+
   .footer-bottom .footer-bottom--list:nth-child(2) {
+    display: none;
+  }
+
+  .footer-top {
+    padding: 4.8rem 1.6rem;
+  }
+
+  .footer-top--list .footer-top--list-item:last-child {
     display: none;
   }
 
