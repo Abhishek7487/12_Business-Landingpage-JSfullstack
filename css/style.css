@@ -514,8 +514,8 @@ body {
     height: 80vh;
     background: linear-gradient(
         to right,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)
       ),
       url(../images/pexels-fauxels-3183197.jpg);
     background-size: cover;
@@ -694,7 +694,11 @@ body {
 
 @media screen and (max-width: 473px) {
   .container {
-    max-width: 100%;
+    max-width: 90%;
+  }
+
+  .btn {
+    padding: 1.8rem 6.4rem;
   }
 
   .section-header {
@@ -702,7 +706,7 @@ body {
   }
 
   .navbar {
-    padding: 5rem;
+    padding: 5rem 2.4rem;
   }
 
   .hero {
@@ -724,21 +728,20 @@ body {
   }
 
   .connect-heading {
-    font-size: 3.6rem;
+    font-size: 3rem;
   }
 
-  .connect-image {
-    width: 90%;
-    margin: 0 auto;
+  .care-heading {
+    font-size: 4.8rem;
   }
 
   .care-box .care-box--text,
   .care-box .care-box--image {
-    width: 90%;
+    width: 95%;
   }
 
   .care-box--heading {
-    font-size: 3.6rem;
+    font-size: 2.6rem;
   }
 
   .care-box--description {
@@ -746,7 +749,7 @@ body {
   }
 
   .team-heading {
-    font-size: 3.6rem;
+    font-size: 4.8rem;
   }
 
   .team-description {
@@ -755,7 +758,6 @@ body {
 
   .team-center {
     grid-template-columns: 1fr;
-    width: 90%;
     margin: 0 auto;
   }
 
@@ -770,6 +772,10 @@ body {
 
   .team-info--heading {
     font-size: 3rem;
+  }
+
+  .team-info--description {
+    padding: 0 4rem;
   }
 
   .footer-bottom .footer-bottom--list:nth-child(2) {
