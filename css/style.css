@@ -778,6 +778,10 @@ body {
     padding: 0 4rem;
   }
 
+  .btn-team {
+    font-size: 1.6rem;
+  }
+
   .footer-bottom .footer-bottom--list:nth-child(2) {
     display: none;
   }
