@@ -702,10 +702,6 @@ body {
     height: 90vh;
   }
 
-  .btn {
-    padding: 1.8rem 8.4rem;
-  }
-
   .navbar {
     padding: 5rem 1.2rem;
   }
@@ -747,6 +743,10 @@ body {
 
   .care-box--description {
     font-size: 1.8rem;
+  }
+
+  .care-box--btn {
+    width: 75%;
   }
 
   .team-heading {
